@@ -20,39 +20,38 @@ _This program allows users to input a single English word into a form and upon s
 ## Specs
 
 
-* The program does nothing non-alphabetical characters, since they do not contain consonants or vowels.
-  **Input Example:** 3
-  **Output Example:** 3
-* The program adds “ay” to single-letter words beginning with a vowel.
-  **Input Example:** “i”
-  **Output Example:** “iay”
-* The program adds “ay” to multiple-character words that begin with a vowel.
-  **Input Example:** “oatmeal”
-  **Output Example:** “oatmealay”
-* The program moves the first consonant to the end of a word beginning with one consonant.
-  **Input Example:** “time”
-  **Output Example:** “imet”
-* The program recognizes “y” as a consonant.
-  **Input Example:** “your”
-  **Output Example:** “oury”
-* The program adds “ay” to the end of words where the first consonant has already been moved to the end of the word.
-  **Input Example:** “imet”
-  **Output Example:** “imetay”
-  **Input Example:** “oury”
-  **Output Example:** “ouryay”
-* The program moves the first consecutive consonants to the end of a word that begins with multiple consonants.
-  **Input Example:** “thistle”
-  **Output Example:** “istleth”
-* The program treats “qu” as two consecutive consonants.
-  **Input Example:** “quail”
-  **Output Example:** “ailqu”
-  **Input Example:** “squeal”
-  **Output Example:** “ealsqu”
-* The program adds “ay” to the end of words where the first consecutive consonants has been moved to the end of the word.
-  **Input Example:** “ealsqu”
-  **Output Example:** “ealsquay”
-  **Input Example:** “istleth”
-  **Output Example:** “islethay”
+1. The program does nothing non-alphabetical characters, since they do not contain consonants or vowels.
+  * **Input Example:** 3
+  * **Output Example:** 3
+2. The program adds “ay” to single-letter words beginning with a vowel.
+  * **Output Example:** “iay”
+3. The program adds “ay” to multiple-character words that begin with a vowel.
+  * **Input Example:** “oatmeal”
+  * **Output Example:** “oatmealay”
+4. The program moves the first consonant to the end of a word beginning with one consonant.
+  * **Input Example:** “time”
+  * **Output Example:** “imet”
+5. The program recognizes “y” as a consonant.
+  * **Input Example:** “your”
+  * **Output Example:** “oury”
+6. The program adds “ay” to the end of words where the first consonant has already been moved to the end of the word.
+  * **Input Example:** “imet”
+  * **Output Example:** “imetay”
+  * **Input Example:** “oury”
+  * **Output Example:** “ouryay”
+7. The program moves the first consecutive consonants to the end of a word that begins with multiple consonants.
+  * **Input Example:** “thistle”
+  * **Output Example:** “istleth”
+8. The program treats “qu” as two consecutive consonants.
+  * **Input Example:** “quail”
+  * **Output Example:** “ailqu”
+  * **Input Example:** “squeal”
+  * **Output Example:** “ealsqu”
+9. The program adds “ay” to the end of words where the first consecutive consonants has been moved to the end of the word.
+  * **Input Example:** “ealsqu”
+  * **Output Example:** “ealsquay”
+  * **Input Example:** “istleth”
+  * **Output Example:** “islethay”
 
 
 ## Known Bugs
