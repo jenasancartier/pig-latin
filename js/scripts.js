@@ -9,15 +9,27 @@ console.log(consonants);
 var result = [];
 console.log($("#englishInput").val());
 var splitArray = $("#englishInput").val().toLowerCase().split("");
-	for (var i = 0; i < vowels.includes(splitArray[0]); ++i) {
-		} if (consonants.includes(splitArray[0])){
-			result.push(splitArray.shift())
-			result.push("a", "y");
-		} else if (vowels.includes(splitArray[0])) {
-			result.push("a", "y");
-		}
+	for (var i = 0; i <= splitArray.length; i++) {
+		 if (consonants.includes(splitArray[0]) === true) {
+			result.push(splitArray.shift());
 
 
+		} else if (consonants.includes(splitArray[0]) === false) {
+		break;
+
+	};
+
+
+		// if (vowels.includes(splitArray[0]) === true); {
+		// 	result.push("a", "y");
+	// }
+// 	if (vowels.includes(splitArray[0]) === true); {
+// 		result.push("a", "y");
+// }
+};
+	if (vowels.includes(splitArray[0]) === true) {
+	result.push("a", "y");
+}
 	var combineResult = splitArray.concat(result);
 	console.log(combineResult.join(""));
 
@@ -27,5 +39,6 @@ var splitArray = $("#englishInput").val().toLowerCase().split("");
 
 //front-end logic
 
-	});
+
+});
 });
